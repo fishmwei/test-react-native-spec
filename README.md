@@ -54,5 +54,16 @@ end
 ```
 then execute command `pod install` in terminal  
 
-### run 
+### run
+```
+cd examples/TestRN493/js
+npm install
+react-native start
+
+```
+
+run XCode
+
+
+
 run code ...
