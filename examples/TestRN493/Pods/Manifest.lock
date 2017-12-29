@@ -27,6 +27,8 @@ PODS:
   - React/ART (0.49.3):
     - React/Core
   - React/Core (0.49.3):
+    - React/cxxreact
+    - React/jschelpers
     - yoga (= 0.49.3.React)
   - React/CxxBridge (0.49.3):
     - Folly (= 2016.09.26.00)
@@ -45,8 +47,6 @@ PODS:
   - React/RCTActionSheet (0.49.3):
     - React/Core
   - React/RCTAnimation (0.49.3):
-    - React/Core
-  - React/RCTBlob (0.49.3):
     - React/Core
   - React/RCTCameraRoll (0.49.3):
     - React/Core
@@ -71,7 +71,6 @@ PODS:
   - React/RCTWebSocket (0.49.3):
     - React/Core
     - React/fishhook
-    - React/RCTBlob
   - yoga (0.49.3.React)
 
 DEPENDENCIES:
@@ -89,7 +88,6 @@ DEPENDENCIES:
   - React/jschelpers (~> 0.49.3)
   - React/RCTActionSheet (~> 0.49.3)
   - React/RCTAnimation (~> 0.49.3)
-  - React/RCTBlob (~> 0.49.3)
   - React/RCTCameraRoll (~> 0.49.3)
   - React/RCTGeolocation (~> 0.49.3)
   - React/RCTImage (~> 0.49.3)
@@ -107,9 +105,9 @@ SPEC CHECKSUMS:
   DoubleConversion: ebb6747c5b66026ad4f97b789c3ceac6f18e57a6
   Folly: b7255b29f1d693c375d642d0f04f0592181156d9
   GLog: 3e4e4ae9746ce6bf6e9420c7fc1e08ad59c8ba1a
-  React: 5071a8cceb50ff52d36ec6934afb9f8a9e443563
+  React: 87a7a338dde398821f04783177f1a74d415f263c
   yoga: 602c68df4e6b41241f972f1f5a5254b23b81a54c
 
-PODFILE CHECKSUM: 6f5eab6594561c4db4f0bfbbc8ee23c0a71b49d9
+PODFILE CHECKSUM: ed85b87baa2da14411f0b7d40980fc29c71e6f8f
 
 COCOAPODS: 1.2.0

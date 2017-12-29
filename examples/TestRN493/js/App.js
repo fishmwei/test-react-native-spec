@@ -20,12 +20,17 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+const packageInfo = require('./package.json');
+
 export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to React Native! 
+        </Text>
+        <Text style={styles.welcome}>
+          version {packageInfo.dependencies['react-native']}
         </Text>
         <Text style={styles.instructions}>
           To get started, edit App.js
