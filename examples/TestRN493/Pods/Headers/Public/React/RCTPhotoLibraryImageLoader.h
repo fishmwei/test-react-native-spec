@@ -1,1 +1,0 @@
-../../../React/Libraries/CameraRoll/RCTPhotoLibraryImageLoader.h

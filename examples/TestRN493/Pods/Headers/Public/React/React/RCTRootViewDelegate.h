@@ -1,1 +1,0 @@
-../../../../React/React/Base/RCTRootViewDelegate.h

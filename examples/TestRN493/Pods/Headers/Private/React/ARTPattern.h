@@ -1,1 +1,0 @@
-../../../React/Libraries/ART/Brushes/ARTPattern.h

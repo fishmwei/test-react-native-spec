@@ -1,1 +1,0 @@
-../../../React/Libraries/CameraRoll/RCTCameraRollManager.h

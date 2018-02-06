@@ -1,1 +1,0 @@
-../../../React/Libraries/Image/RCTLocalAssetImageLoader.h
