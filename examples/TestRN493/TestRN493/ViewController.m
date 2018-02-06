@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import <React/RCTBundleURLProvider.h>
+#import <React/RCTRootView.h>
 
-@interface ViewController ()
+
+@interface ViewController (){
+    RCTRootView *_rootView;
+}
 
 @end
 
@@ -16,9 +21,51 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self loadReactView];
+    
+    
 }
 
+
+- (void)loadReactView {
+    
+    
+    NSURL *jsCodeLocation;
+    
+    jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle" subdirectory:@"bundle"];
+    
+    
+    _rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+                                            moduleName:@"TestRN493"
+                                     initialProperties:nil
+                                         launchOptions:nil];
+    _rootView.backgroundColor = [UIColor lightGrayColor];
+    
+    _rootView.frame = CGRectMake(0, 0, 300, 400);
+    
+    [self.view addSubview:_rootView];
+    
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn addTarget:self action:@selector(reloadView) forControlEvents:UIControlEventTouchUpInside];
+    btn.frame = CGRectMake(0, 410, 300, 44);
+    [self.view addSubview:btn];
+    [btn setTitle:@"reload many times" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn setBackgroundColor:[UIColor greenColor]];
+ 
+    
+}
+
+- (void)reloadView {
+    for (int i = 0; i < 1000; i++) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [_rootView.bridge reload];
+        });
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

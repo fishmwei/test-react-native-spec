@@ -10,7 +10,8 @@ def react0493
   pod 'yoga', '0.49.3.React'
   pod 'React', '~>0.49.3'
   pod 'React/Core', '~>0.49.3'
-  pod 'React/CxxBridge', '~>0.49.3'
+  #pod 'React/CxxBridge', '~>0.49.3'
+  pod 'React/BatchedBridge', '~>0.49.3'
   pod 'React/RCTText', '~>0.49.3'
   pod 'React/RCTNetwork', '~>0.49.3'
   pod 'React/RCTWebSocket', '~>0.49.3'
@@ -22,7 +23,7 @@ def react0493
   pod 'React/RCTActionSheet', '~>0.49.3'
   pod 'React/RCTAnimation', '~>0.49.3'
 
-  pod 'React/RCTBlob', '~>0.49.3'
+#pod 'React/RCTBlob', '~>0.49.3'
   pod 'React/RCTCameraRoll', '~>0.49.3'
   pod 'React/RCTGeolocation', '~>0.49.3'
 
