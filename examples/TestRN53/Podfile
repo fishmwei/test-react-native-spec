@@ -1,0 +1,72 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '8.0'
+
+source 'https://github.com/fishmwei/react-native-spec.git'
+
+pod 'DoubleConversion', '1.1.5'
+pod 'GLog', '0.3.4'
+pod 'Folly', '2016.09.26.00'
+pod 'boost', '1.63.0'
+
+def react_code
+    pod 'yoga', :path=>'/Volumes/Code/daily-temp/201802/0209/RN53/node_modules/react-native/ReactCommon/yoga'
+    pod 'React', :path=>'/Volumes/Code/daily-temp/201802/0209/RN53/node_modules/react-native', :subspecs => [
+    'Core',
+    'BatchedBridge',
+    #'CxxBridge', #存在异步崩溃问题，先不使用
+    'RCTText',
+    'RCTNetwork',
+    'RCTWebSocket',
+    'RCTImage',
+    'DevSupport',
+    'jschelpers',
+    'cxxreact',
+    'ART',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTCameraRoll',
+    'RCTGeolocation',
+    'RCTPushNotification',
+    'RCTSettings',
+    'RCTVibration',
+    'fishhook',
+    'RCTLinkingIOS',
+    ]
+    
+end
+
+def react53
+    pod 'yoga', '0.49.3.React'
+    pod 'React', '~>0.49.3'
+    pod 'React/Core', '~>0.49.3'
+    pod 'React/CxxBridge', '~>0.49.3'
+    pod 'React/RCTText', '~>0.49.3'
+    pod 'React/RCTNetwork', '~>0.49.3'
+    pod 'React/RCTWebSocket', '~>0.49.3'
+    pod 'React/RCTImage', '~>0.49.3'
+    pod 'React/DevSupport', '~>0.49.3'
+    pod 'React/jschelpers', '~>0.49.3'
+    pod 'React/cxxreact', '~>0.49.3'
+    pod 'React/ART', '~>0.49.3'
+    pod 'React/RCTActionSheet', '~>0.49.3'
+    pod 'React/RCTAnimation', '~>0.49.3'
+    
+    pod 'React/RCTBlob', '~>0.49.3'
+    pod 'React/RCTCameraRoll', '~>0.49.3'
+    pod 'React/RCTGeolocation', '~>0.49.3'
+    
+    pod 'React/RCTPushNotification', '~>0.49.3'
+    pod 'React/RCTSettings', '~>0.49.3'
+    pod 'React/RCTVibration', '~>0.49.3'
+    pod 'React/fishhook', '~>0.49.3'
+    pod 'React/RCTLinkingIOS', '~>0.49.3'
+    
+    pod 'DoubleConversion', '1.1.5'
+    pod 'GLog', '0.3.4'
+    pod 'Folly', '2016.09.26.00'
+    pod 'boost', '1.63.0'
+end
+
+target 'TestRN53' do
+    react_code
+end
