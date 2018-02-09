@@ -60,8 +60,8 @@
 }
 
 - (void)reloadView {
-    for (int i = 0; i < 1000; i++) {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    for (int i = 0; i < 10000; i++) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [_rootView.bridge reload];
         });
     }
