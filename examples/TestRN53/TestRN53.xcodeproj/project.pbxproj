@@ -12,6 +12,7 @@
 		C161BC5E202DA3250091649F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C161BC5D202DA3250091649F /* ViewController.m */; };
 		C161BC63202DA3250091649F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C161BC62202DA3250091649F /* Assets.xcassets */; };
 		C161BC69202DA3250091649F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C161BC68202DA3250091649F /* main.m */; };
+		C1CD55052043B4EB0066D27F /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = C1CD55042043B2C10066D27F /* bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C161BC62202DA3250091649F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C161BC67202DA3250091649F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C161BC68202DA3250091649F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1CD55042043B2C10066D27F /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		C161BC58202DA3250091649F /* TestRN53 */ = {
 			isa = PBXGroup;
 			children = (
+				C1CD55042043B2C10066D27F /* bundle */,
 				C161BC59202DA3250091649F /* AppDelegate.h */,
 				C161BC5A202DA3250091649F /* AppDelegate.m */,
 				C161BC5C202DA3250091649F /* ViewController.h */,
@@ -150,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1CD55052043B4EB0066D27F /* bundle in Resources */,
 				C161BC63202DA3250091649F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

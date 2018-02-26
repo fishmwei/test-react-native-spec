@@ -35,10 +35,10 @@
     NSURL *jsCodeLocation;
     
     jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle" subdirectory:@"bundle"];
-    if (!jsCodeLocation) {
+//    if (!jsCodeLocation) {
         jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 
-    }
+//    }
     
     _rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                             moduleName:@"RN53"
