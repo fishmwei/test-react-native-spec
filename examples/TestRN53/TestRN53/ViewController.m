@@ -40,6 +40,8 @@
 
 //    }
     
+    jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false"];
+    
     _rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                             moduleName:@"RN53"
                                      initialProperties:nil
@@ -63,11 +65,13 @@
 }
 
 - (void)reloadView {
-    for (int i = 0; i < 10000; i++) {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [_rootView.bridge reload];
-        });
-    }
+//    for (int i = 0; i < 10000; i++) {
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [_rootView.bridge reload];
+//        });
+//    }
+    
+    [self.navigationController pushViewController:[ViewController new] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
