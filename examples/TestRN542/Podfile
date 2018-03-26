@@ -1,0 +1,40 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '8.0'
+
+source "git@github.com:fishmwei/react-native-spec.git"
+
+
+def react_code
+    #pod 'React', '0.54.2', :subspecs => [
+    pod 'React', :path=>'./js/node_modules/react-native', :subspecs => [
+    'Core',
+    #'cxxreact_legacy',
+    #'BatchedBridge',
+    'CxxBridge',
+    'RCTText',
+    'PrivateDatabase',
+    'jsinspector',
+    'RCTBlob',
+    'RCTNetwork',
+    'RCTWebSocket',
+    'RCTImage',
+    'DevSupport',
+    'jschelpers',
+    'cxxreact',
+    'ART',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTCameraRoll',
+    'RCTGeolocation',
+    'RCTPushNotification',
+    'RCTSettings',
+    'RCTVibration',
+    'fishhook',
+    'RCTLinkingIOS',
+    ]
+    
+end
+
+target 'TestRN542' do
+  react_code
+end
